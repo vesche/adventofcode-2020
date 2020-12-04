@@ -17,7 +17,7 @@ def check(k, v):
             return 59 <= int(v.rstrip('in')) <= 76
     elif k == 'hcl':
         if v.startswith('#'):
-            return len(''.join([c for c in v.lstrip('#') if c in '0123456789abcdef'])) == 6
+            return len([c for c in v if c in '0123456789abcdef#']) == 7
     elif k == 'ecl':
         return v in ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']
     elif k == 'pid':
