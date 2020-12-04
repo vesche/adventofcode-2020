@@ -17,8 +17,7 @@ def check(k, v):
             return 59 <= int(v.rstrip('in')) <= 76
     elif k == 'hcl':
         if v.startswith('#'):
-            v = v.lstrip('#')
-            return len(''.join([c for c in v if c in '0123456789abcdef'])) == 6
+            return len(''.join([c for c in v.lstrip('#') if c in '0123456789abcdef'])) == 6
     elif k == 'ecl':
         return v in ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']
     elif k == 'pid':
@@ -32,9 +31,7 @@ def solve(part1=True):
         for k, v in [pair.split(':') for pair in pairs]:
             if part1 or check(k, v):
                 passport.add(k)
-        if 'cid' in passport:
-            passport.remove('cid')
-        if passport == fields:
+        if passport & fields == fields:
             valid += 1
     return valid
 
