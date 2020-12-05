@@ -24,6 +24,7 @@ for line in data:
 
 print(max(seat_ids))
 
+seat_ids = sorted(seat_ids)
 for seat in range(seat_ids[0], seat_ids[-1]):
     if seat not in seat_ids:
         print(seat)
