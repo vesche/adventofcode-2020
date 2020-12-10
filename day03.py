@@ -1,4 +1,4 @@
-with open('input3.txt') as f:
+with open('input03.txt') as f:
     data = f.read().splitlines()
 
 def travel(right, down):

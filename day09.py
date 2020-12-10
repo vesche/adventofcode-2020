@@ -1,6 +1,6 @@
 from itertools import combinations
 
-with open('input9.txt') as f:
+with open('input09.txt') as f:
     data = list(map(int, f.read().splitlines()))
 
 def part1():

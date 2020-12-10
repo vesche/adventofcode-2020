@@ -1,4 +1,4 @@
-with open('input6.txt') as f:
+with open('input06.txt') as f:
     data = f.read().split('\n\n')
 
 part1, part2 = 0, 0

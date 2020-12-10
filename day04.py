@@ -1,4 +1,4 @@
-with open('input4.txt') as f:
+with open('input04.txt') as f:
     data = [i.split('\n') for i in f.read().split('\n\n')]
 
 fields = {'byr', 'ecl', 'eyr', 'hcl', 'hgt', 'iyr', 'pid'}

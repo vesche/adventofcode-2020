@@ -1,4 +1,4 @@
-with open('input5.txt') as f:
+with open('input05.txt') as f:
     data = f.read().splitlines()
 
 seat_ids = list()

@@ -1,6 +1,6 @@
 import collections
 
-with open('input7.txt') as f:
+with open('input07.txt') as f:
     data = f.read().splitlines()
 
 bags = list()
