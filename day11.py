@@ -38,7 +38,6 @@ def solve(p1=True):
                     nx = 5
                 if col == 'L' and n == 0:
                     grid[i][j] = '#'
-
                 elif col == '#' and n >= nx:
                     grid[i][j] = 'L'
                 same &= row[j] == grid[i][j]
